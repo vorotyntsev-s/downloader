@@ -17,3 +17,5 @@ def get_hash():
                 revision.writelines([gethash, '  ', f[1:]])
                 revision.write('\n')
 
+
+

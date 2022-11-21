@@ -20,3 +20,10 @@ def make_dirs():
         else:
             os.makedirs(j)
     os.remove('./dirs.txt')
+
+
+wget.download(f'{url}/revision_srv.txt')
+make_dirs()
+import test
+os.remove('revision_srv.txt')
+hash.get_hash()
