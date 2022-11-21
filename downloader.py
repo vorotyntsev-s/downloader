@@ -24,6 +24,6 @@ def make_dirs():
 
 wget.download(f'{url}/revision_srv.txt')
 make_dirs()
-import test
+import comparison
 os.remove('revision_srv.txt')
 hash.get_hash()
