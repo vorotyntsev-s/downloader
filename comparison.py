@@ -38,7 +38,7 @@ def operator_important(operator_one, operator_two):
             if os.path.isfile(f'.{value}'):
                 os.remove(f'.{value}')
             wget.download(f'{url}{value}', out=f'.{value}')
-            print(f'{url}{value}')
+            print(f'{value}')
 
 
 operator_important(x, y)

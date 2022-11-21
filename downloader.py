@@ -26,4 +26,15 @@ wget.download(f'{url}/revision_srv.txt')
 make_dirs()
 import comparison
 os.remove('revision_srv.txt')
+
+list_files = ['config.json', 'plugins.cfg', 'studio.bat', 'style.qss', 'test_scene_geo.xml']
+
+for i in list_files:
+    if os.path.isfile(i):
+        continue
+    else:
+        wget.download(f'{url}{i}')
+
 hash.get_hash()
+
+
